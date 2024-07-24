@@ -1,0 +1,17 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vw;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid: gap 2em;
+    padding: absolute;
+    background-color: aquamarine;
+    min-width: 100vh;
+    text-align: center;
+}
+
+header, .footer {}
