@@ -8,9 +8,11 @@ html, body {
 .container {
     display: grid;
     grid: gap 2em;
-    padding: absolute;
+    padding: 1em;
+    position: absolute;
     background-color: aquamarine;
-    min-width: 100vh;
+    min-width: 85vw;
+    font-size: 2em;
     text-align: center;
 }
 
