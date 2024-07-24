@@ -14,4 +14,30 @@ html, body {
     text-align: center;
 }
 
-header, .footer {}
+header, footer {
+    background-color: black;
+    color: aliceblue;
+}
+
+@media screen and (min-device-width:420px) {
+    .logo { grid-area: logo;}
+    .titulo{ grid-area: titulo;}
+    .nav { grid-area: nav;}
+    .texto { grid-area: texto;}
+    .box1 { grid-area: box1;}
+    .box2 { grid-area: box2;}
+    .box3 { grid-area: box3;}
+    .footer { grid-area: foot;}
+    
+    .container{ 
+        grid-template-areas: 
+        'logo logo titulo titulo titulo titulo'
+        'nav nav nav nav nav nav'
+        'texto texto texto texto texto texto'
+        'box1 box1 box2 box2 box3 box3'
+        'foot foot foot foot foot foot'
+
+        ;
+    }
+
+}
