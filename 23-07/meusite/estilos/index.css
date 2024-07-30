@@ -1,0 +1,67 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-gap: 2em;
+    padding: 1em;
+    position: absolute;
+    background-color: aquamarine;
+    min-width: 100%;
+    font-size: 2em;
+    text-align: center;
+    min-height: 90%;
+}
+
+header, .footer{
+    background-color: black;
+    color:aliceblue;
+}
+
+section{
+    background-color: darkgreen;
+}
+
+@media screen and (min-width: 460px) {
+
+    .header{ grid-area: header;}
+    .logo{ grid-area: logo;}
+    .titulo{ grid-area: titulo;}
+    .nav{ grid-area: nav;}
+    .texto{ grid-area: texto;}
+    .section1{grid-area: section1;}
+    .section2{grid-area: section2;}
+    .box1{ grid-area: box1;}
+    .box2{ grid-area: box2;}
+    .box3{ grid-area: box3;}
+    .footer{ grid-area: foot;}
+
+    .container{
+        grid-template-areas: 
+          'header header header header header header'
+          'nav nav nav nav nav nav'
+          'section1 section1 section1 section1 section1 section1'
+          'section2 section2 section2 section2 section2 section2'
+          'foot foot foot foot foot foot';
+          width: 91vw;
+          height: 70vh;
+    }
+
+    .header, .section2{
+        display: grid;
+    }
+
+    .header{
+        grid-template-areas: 
+          'logo  logo   titulo titulo titulo titulo';
+    }
+    .section2{
+        grid-template-areas: 
+          'box1 box1 box2 box2 box3 box3';
+    }
+
+}
