@@ -8,7 +8,7 @@ html, body {
 .container{
     display: grid;
     grid-gap: 2em;
-    padding: 1em;
+    padding: 1em;  
     position: absolute;
     background-color: aquamarine;
     min-width: 100%;
