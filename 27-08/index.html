@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <fieldset>
+        <div>
+            <label for="Capacidade">Capacidade do tanque de combustivel</label>
+            <input type="number" id="Capacidade" name="Capacidade">  <br>
+          
+            <label for="Valor">Valor que tem para gastar</label>
+            <input type="number" id="Valor" name="Valor">
+
+            <div>
+                <input type="radio" id="alcool" name="combustivel" value="alcool">
+                <label for="alcool">Álcool</label>
+              
+           
+                <input type="radio" id="gasolina" name="combustivel" value="gasolina">
+                <label for="gasolina" id="">gasolina</label>
+                <br>
+            </div>
+
+            <button onclick="calcular()">calcular</button>
+            <button onclick="novo()">novo</button>
+            <br>
+            <p id="resultado"></p>
+        </div>
+    </fieldset>
+
+    <script>
+        function calcular() {
+            const dinheiro = parseFloat(document.getElementById('dinheiro').value);
+            const capacidade = parseFloat(document.getElementById('capacidade').value);
+            const combustivel = document.querySelector('input[name="combustivel"]:checked').value;
+
+            let precoPorLitro;
+            if (combustivel === 'gasolina') {
+                precoPorLitro = 6.75;
+            } else {
+                precoPorLitro = 4.96;
+            }
+
+            const litros = dinheiro / precoPorLitro;
+            const resultado = document.getElementById('resultado');
+
+            if (litros > capacidade) {
+               return resultado.textContent = `Você pode comprar ${litros.toFixed(2)} litros, mas isso excede a capacidade máxima do tanque (${capacidade} litros).`;
+            } else {
+               return resultado.textContent = `Você pode comprar ${litros.toFixed(2)} litros.`;
+            }
+        }
+    </script>
+</body>
+
+</html>
