@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <fieldset>
-       <div> 
-            <label for="Capacidade">Capacidade do tanque de combustivel</label>
-            <input type="">
-            <br>
-            <label for="Valor">Valor que tem para gastar</label>
-            <input type="">
-        </div>
 
-        
+        <label for="dinheiro">Quantidade de dinheiro (R$):</label>
+        <input type="number" id="dinheiro" name="dinheiro"><br><br>
+
+        <label for="capacidade">Capacidade máxima do tanque (litros):</label>
+        <input type="number" id="capacidade" name="capacidade"><br><br>
+
+        <input type="radio" id="gasolina" name="combustivel" value="gasolina">
+        <label for="gasolina">Gasolina</label><br>
+        <input type="radio" id="alcool" name="combustivel" value="alcool">
+        <label for="alcool">Álcool</label><br><br>
+
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="limpar()">Novo</button>
+
+        <p id="resultado"></p>
+        <script>
+            function calcular() {
+                const dinheiro = parseFloat(document.getElementById('dinheiro').value);
+                const capacidade = parseFloat(document.getElementById('capacidade').value);
+                const combustivel = document.querySelector('input[name="combustivel"]:checked').value;
+
+                let precoPorLitro;
+                if (combustivel === 'gasolina') {
+                    precoPorLitro = 6.75;
+                } else {
+                    precoPorLitro = 4.96;
+                }
+
+                const litros = dinheiro / precoPorLitro;
+                const resultado = document.getElementById('resultado');
+
+                if (litros > capacidade) {
+                    resultado.textContent = `Você pode comprar ${litros.toFixed(2)} litros, mas isso excede a capacidade máxima do tanque (${capacidade} litros).`;
+                } else {
+                    resultado.textContent = `Você pode comprar ${litros.toFixed(2)} litros.`;
+                }
+            }
+
+            function limpar() {
+            document.getElementById('dinheiro').value = '';
+            document.getElementById('capacidade').value = '';
+            document.querySelector('input[name="combustivel"]:checked').checked = false;
+            document.getElementById('resultado').textContent = '';
+        }
+        </script>
     </fieldset>
+
 </body>
+
 </html>
