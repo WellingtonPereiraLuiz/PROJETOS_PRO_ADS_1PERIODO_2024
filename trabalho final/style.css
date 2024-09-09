@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    background-color: #f8f8ff; /* Define a cor de fundo */
+}
+
+header {
+    background-color: #4CAF50; /* Define a cor de fundo do cabeçalho */
+    color: white; /* Define a cor do texto do cabeçalho */
+    text-align: center; /* Centraliza o texto */
+    padding: 1em 0; /* Adiciona preenchimento ao topo e ao fundo */
+}
+
+section {
+    margin: 20px; /* Define a margem ao redor das seções */
+    padding: 20px; /* Define o preenchimento dentro das seções */
+    background-color: white; /* Define a cor de fundo das seções */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra às seções */
+}
+
+form {
+    display: flex; /* Define o layout flexível para o formulário */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+}
+
+label {
+    margin-top: 10px; /* Adiciona margem superior aos rótulos */
+}
+
+input, textarea, select, button {
+    margin-top: 5px; /* Adiciona margem superior aos campos de entrada */
+    padding: 10px; /* Adiciona preenchimento aos campos de entrada */
+    border: 1px solid #ccc; /* Define a borda dos campos de entrada */
+    border-radius: 4px; /* Adiciona bordas arredondadas aos campos de entrada */
+}
+
+button {
+    background-color: #4CAF50; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar sobre o botão */
+    margin-top: 20px; /* Adiciona margem superior ao botão */
+}
+
+button:hover {
+    background-color: #45a049; /* Define a cor de fundo do botão ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    section {
+        margin: 10px; /* Reduz a margem ao redor das seções em telas menores */
+        padding: 10px; /* Reduz o preenchimento dentro das seções em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    header, section {
+        padding: 5px; /* Reduz o preenchimento no cabeçalho e nas seções em telas muito pequenas */
+    }
+}
