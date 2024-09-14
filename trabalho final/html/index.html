@@ -1,56 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Pessoal</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link para o arquivo de estilos CSS -->
 </head>
+
 <body>
     <header>
-        <h1>Bem-vindo à Minha Página Pessoal</h1> <!-- Título da página -->
+        <h1>Formulário para contato</h1> <!-- Título da página -->
     </header>
-    <section id="about">
-        <h2>Sobre Mim</h2> <!-- Seção sobre informações pessoais -->
-        <p>Informações gerais sobre você.</p> <!-- Texto descritivo sobre você -->
-    </section>
+ 
+   
+    
+
     <section id="contact">
         <h2>Contato</h2> <!-- Seção de contato -->
         <form id="contactForm"> <!-- Formulário de contato -->
             <label for="name">Nome:</label> <!-- Rótulo para o campo de nome -->
             <input type="text" id="name" name="name" required> <!-- Campo de entrada para o nome -->
-            
+
             <label for="message">Mensagem:</label> <!-- Rótulo para o campo de mensagem -->
             <textarea id="message" name="message" required></textarea> <!-- Campo de texto para a mensagem -->
-            
+
             <label for="date">Data:</label> <!-- Rótulo para o campo de data -->
             <input type="date" id="date" name="date" required> <!-- Campo de entrada para a data -->
-            
+
             <label for="number">Número:</label> <!-- Rótulo para o campo de número -->
             <input type="number" id="number" name="number" required> <!-- Campo de entrada para o número -->
-            
+
             <label>Gênero:</label> <!-- Rótulo para os botões de rádio de gênero -->
-            <input type="radio" id="male" name="gender" value="male" required> <!-- Botão de rádio para gênero masculino -->
+            <input type="radio" id="male" name="gender" value="male" required>
+            <!-- Botão de rádio para gênero masculino -->
             <label for="male">Masculino</label>
-            <input type="radio" id="female" name="gender" value="female" required> <!-- Botão de rádio para gênero feminino -->
+            <input type="radio" id="female" name="gender" value="female" required>
+            <!-- Botão de rádio para gênero feminino -->
             <label for="female">Feminino</label>
-            
-            <label for="newsletter">Deseja receber nossa newsletter?</label> <!-- Rótulo para o checkbox de newsletter -->
+
+            <label for="newsletter">Deseja receber nossa newsletter?</label>
+            <!-- Rótulo para o checkbox de newsletter -->
             <input type="checkbox" id="newsletter" name="newsletter"> <!-- Checkbox para a newsletter -->
-            
+
             <label for="topic">Assunto:</label> <!-- Rótulo para o campo de seleção de assunto -->
             <select id="topic" name="topic" required> <!-- Campo de seleção de assunto -->
                 <option value="feedback">Feedback</option> <!-- Opção de feedback -->
                 <option value="support">Suporte</option> <!-- Opção de suporte -->
                 <option value="other">Outro</option> <!-- Opção de outro -->
             </select>
-            
+
             <button type="submit">Enviar</button> <!-- Botão de envio do formulário -->
         </form>
     </section>
-    <footer>
-        <a href="educational_app.html">Aplicação Educativa</a> <!-- Link para a aplicação educativa -->
-    </footer>
-    <script src="script.js"></script> <!-- Link para o arquivo de script JavaScript -->
+
+    <section id="education">
+        <footer>
+            <a href="educational_app.html">Aplicação Educativa</a> <!-- Link para a aplicação educativa -->
+        </footer>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Mim</h2> <!-- Seção sobre informações pessoais -->
+        <p>Informações gerais sobre mim.</p> <!-- Texto descritivo sobre você -->
+        <footer>
+            <a href="my_profile.html">My profile</a>
+        </footer>
+    </section>
+
+    <script src="../javascript/script.js"></script> <!-- Link para o arquivo de script JavaScript -->
 </body>
+
 </html>
