@@ -9,14 +9,14 @@ body {
 
 #about{
     text-align: center;
-    width: 600px;
-    margin-left: 600px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 #education{
     text-align: center;
-    width: 600px;
-    margin-left: 600px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 header {
@@ -32,7 +32,6 @@ section {
     background-color: white; /* Define a cor de fundo das seções */
     border-radius: 8px; /* Adiciona bordas arredondadas */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra às seções */
-    
 }
 
 form {

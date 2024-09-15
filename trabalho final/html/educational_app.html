@@ -1,18 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicação Educativa</title>
-    <link rel="stylesheet" href="../css/style.css"> <!-- Link para o arquivo de estilos CSS -->
+    <title>Atividade de Contagem de Sílabas</title>
+    <link rel="stylesheet" href="../css/style_educacional.css">
 </head>
+
 <body>
     <header>
-        <h1>Aplicação Educativa</h1> <!-- Título da aplicação educativa -->
+        <h1>Atividade de Contagem de Sílabas</h1>
     </header>
-    <section>
-        <p>Conteúdo da aplicação educativa.</p> <!-- Texto descritivo da aplicação educativa -->
-        <a href="index.html">Voltar à Página Inicial</a> <!-- Link para retornar à página inicial -->
+
+    <section id="activity">
+        <h2>Quantas Sílabas Tem?</h2>
+        <p>Leia a palavra e clique na quantidade de sílabas correta.</p>
+        <div class="word-container">
+            <div class="word">
+                <p>PARAFUSO</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 4)">1</button>
+                    <button onclick="checkAnswer(this, 4)">2</button>
+                    <button onclick="checkAnswer(this, 4)">3</button>
+                    <button onclick="checkAnswer(this, 4)">4</button>
+                </div>
+            </div>
+            <div class="word">
+                <p>JIPE</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 2)">1</button>
+                    <button onclick="checkAnswer(this, 2)">2</button>
+                    <button onclick="checkAnswer(this, 2)">3</button>
+                    <button onclick="checkAnswer(this, 2)">4</button>
+                </div>
+            </div>
+            <div class="word">
+                <p>CANGURU</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 3)">1</button>
+                    <button onclick="checkAnswer(this, 3)">2</button>
+                    <button onclick="checkAnswer(this, 3)">3</button>
+                    <button onclick="checkAnswer(this, 3)">4</button>
+                </div>
+            </div>
+            <div class="word">
+                <p>CAMELO</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 3)">1</button>
+                    <button onclick="checkAnswer(this, 3)">2</button>
+                    <button onclick="checkAnswer(this, 3)">3</button>
+                    <button onclick="checkAnswer(this, 3)">4</button>
+                </div>
+            </div>
+            <div class="word">
+                <p>ABELHA</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 3)">1</button>
+                    <button onclick="checkAnswer(this, 3)">2</button>
+                    <button onclick="checkAnswer(this, 3)">3</button>
+                    <button onclick="checkAnswer(this, 3)">4</button>
+                </div>
+            </div>
+            <div class="word">
+                <p>ABACATE</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 4)">1</button>
+                    <button onclick="checkAnswer(this, 4)">2</button>
+                    <button onclick="checkAnswer(this, 4)">3</button>
+                    <button onclick="checkAnswer(this, 4)">4</button>
+                </div>
+            </div>
+            <div class="word">
+                <p>MONGE</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 2)">1</button>
+                    <button onclick="checkAnswer(this, 2)">2</button>
+                    <button onclick="checkAnswer(this, 2)">3</button>
+                    <button onclick="checkAnswer(this, 2)">4</button>
+                </div>
+            </div>
+            <div class="word">
+                <p>CELULAR</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 3)">1</button>
+                    <button onclick="checkAnswer(this, 3)">2</button>
+                    <button onclick="checkAnswer(this, 3)">3</button>
+                    <button onclick="checkAnswer(this, 3)">4</button>
+                </div>
+            </div>
+            <div class="word">
+                <p>BIGODE</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 3)">1</button>
+                    <button onclick="checkAnswer(this, 3)">2</button>
+                    <button onclick="checkAnswer(this, 3)">3</button>
+                    <button onclick="checkAnswer(this, 3)">4</button>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section id="palette">
+        <h2>Escolha uma Cor</h2>
+        <div class="colors">
+            <button class="color" style="background-color: red;" onclick="selectColor('red')"></button>
+            <button class="color" style="background-color: blue;" onclick="selectColor('blue')"></button>
+            <button class="color" style="background-color: green;" onclick="selectColor('green')"></button>
+            <button class="color" style="background-color: yellow;" onclick="selectColor('yellow')"></button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Mim</h2> <!-- Seção sobre informações pessoais -->
+        <p>Informações gerais sobre mim.</p> <!-- Texto descritivo sobre você -->
+        <footer>
+            <a href="my_profile.html">Clique aqui</a>
+        </footer>
+    </section>
+
+    <script src="../javascript/educacionalScript.js"></script>
 </body>
+
 </html>
+

@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Define a fonte padrão */
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove preenchimento padrão */
+    background-color: #f8f8ff;
+    /* Define a cor de fundo */
+
+}
+
+header {
+    background-color: #4CAF50;
+    /* Define a cor de fundo do cabeçalho */
+    color: white;
+    /* Define a cor do texto do cabeçalho */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 1em 0;
+    /* Adiciona preenchimento ao topo e ao fundo */
+}
+
+section {
+    margin: 20px;
+    /* Define a margem ao redor das seções */
+    padding: 20px;
+    /* Define o preenchimento dentro das seções */
+    background-color: white;
+    /* Define a cor de fundo das seções */
+    border-radius: 8px;
+    /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra às seções */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+
+    margin: 0;
+}
+
+img {
+    max-width: 150px;
+    /* Ajuste o tamanho conforme necessário */
+
+    /* Espaçamento entre o texto e a imagem */
+    border-radius: 60%;
+}
+
+#formulario {
+    text-align: center;
+    
+    margin-left: 250px;
+    margin-right: 250px;
+}
