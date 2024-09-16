@@ -32,17 +32,18 @@
             <input type="number" id="number" name="number" required> <!-- Campo de entrada para o número -->
 
             <label>Gênero:</label> <!-- Rótulo para os botões de rádio de gênero -->
-            <input type="radio" id="male" name="gender" value="male" required>
-            <!-- Botão de rádio para gênero masculino -->
-            <label for="male">Masculino</label>
-            <input type="radio" id="female" name="gender" value="female" required>
-            <!-- Botão de rádio para gênero feminino -->
-            <label for="female">Feminino</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required> <!-- Botão de rádio para gênero masculino -->
+                <label for="male">Masculino</label>
+                <input type="radio" id="female" name="gender" value="female" required> <!-- Botão de rádio para gênero feminino -->
+                <label for="female">Feminino</label>
+            </div>
 
-            <label for="newsletter">Deseja receber nossa newsletter?</label>
-            <!-- Rótulo para o checkbox de newsletter -->
-            <input type="checkbox" id="newsletter" name="newsletter"> <!-- Checkbox para a newsletter -->
-
+            <div class="checkbox-group">
+                <input type="checkbox" id="newsletter" name="newsletter"> <!-- Checkbox para a newsletter -->
+                <label for="newsletter">Deseja receber nossa newsletter?</label> <!-- Rótulo para o checkbox de newsletter -->
+            </div>
+            
             <label for="topic">Assunto:</label> <!-- Rótulo para o campo de seleção de assunto -->
             <select id="topic" name="topic" required> <!-- Campo de seleção de assunto -->
                 <option value="feedback">Feedback</option> <!-- Opção de feedback -->

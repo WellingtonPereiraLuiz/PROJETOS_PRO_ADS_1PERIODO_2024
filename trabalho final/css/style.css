@@ -13,6 +13,17 @@ body {
     margin-right: 250px;
 }
 
+.radio-group, .checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group label, .checkbox-group label {
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+
 #education{
     text-align: center;
     margin-left: 250px;
